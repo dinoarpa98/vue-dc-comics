@@ -8,7 +8,7 @@
     <main>
       <div class="content">
          <div class="container">
-           <h3>il contenuto va qui</h3>
+           <ProductSection/>
          </div>
       </div>
 
@@ -17,6 +17,7 @@
       </div>
 
     </main>
+
   </div>
 </template>
 
@@ -25,13 +26,15 @@
 import LogoComp from './components/LogoComp.vue'
 import MenuComp from './components/MenuComp.vue'
 import iconsComp from './components/iconsComp.vue'
+import ProductSection from './components/ProductSection.vue'
 
 export default {
   name: 'App',
   components: {
     LogoComp,
     MenuComp,
-    iconsComp
+    iconsComp,
+    ProductSection
   }
 }
 </script>
@@ -50,7 +53,8 @@ export default {
  .content{
    background-color: black;
    color: #fff;
-   padding: 30px 0;
+   padding: 20px;
+   display: flex;
  }
 
  .icons{
