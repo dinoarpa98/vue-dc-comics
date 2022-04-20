@@ -50,14 +50,19 @@ ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     li{
         display: flex;
         align-items: center;
         color: white;
+        font-size: 1rem;
        h3{
          margin-left: 20px;
        }
+    }
+
+    li img{
+      height: 50px;
     }
 }
 </style>
