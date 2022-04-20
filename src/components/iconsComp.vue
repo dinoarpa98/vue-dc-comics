@@ -56,6 +56,7 @@ ul{
         align-items: center;
         color: white;
         font-size: 1rem;
+        padding: 25px;
        h3{
          margin-left: 20px;
        }
