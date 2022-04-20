@@ -1,12 +1,10 @@
 <template>
-    <div class="product">
-      <div class="box">
-        <!-- <img :src="details.src" alt="">
-        <h3>{{ details.titolo }}</h3> -->
-        <img :src="src" alt="">
-        <h5>{{ titolo }}</h5>
-      </div>
+  <div class="product">
+    <div class="box">
+      <img :src="src" alt="">
+      <h5>{{ titolo }}</h5>
     </div>
+  </div>
 </template>
 
 <script>
@@ -23,17 +21,15 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .product {
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     .box {
       margin-right: 10px;
       padding: 20px;
-      height: 50%;
+      flex-basis: calc(100% / 6) - 20px;
     }
-
-    .box img{
-      width: 70%;
-    }
-    
   }
 </style>
