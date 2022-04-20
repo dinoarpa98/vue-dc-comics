@@ -6,6 +6,13 @@
     </header>
 
     <main>
+      <div class="jumbo">
+        <!-- <JumboSection/> -->
+        
+      </div>
+      <div class="series">
+          CURRENT SERIES
+        </div>
       <div class="content">
          <div class="container">
            <ProductSection/>
@@ -17,7 +24,10 @@
       </div>
 
     </main>
-
+    
+    <footer>
+      <FooterComp/>
+    </footer>
   </div>
 </template>
 
@@ -27,6 +37,8 @@ import LogoComp from './components/LogoComp.vue'
 import MenuComp from './components/MenuComp.vue'
 import iconsComp from './components/iconsComp.vue'
 import ProductSection from './components/ProductSection.vue'
+import FooterComp from './components/FooterComp.vue'
+// import JumboSection from './components/JumboSection'
 
 export default {
   name: 'App',
@@ -34,7 +46,9 @@ export default {
     LogoComp,
     MenuComp,
     iconsComp,
-    ProductSection
+    ProductSection,
+    FooterComp,
+    // JumboSection,
   }
 }
 </script>
@@ -59,6 +73,24 @@ export default {
 
  .icons{
    background-color: rgb(20, 135, 230);
+ }
+
+ .jumbo{
+   background-image: url('./assets/img/jumbotron.jpg');
+   height: 400px;
+   background-size: cover;
+   position: relative;
+ }
+
+ .series{
+   color: white;
+   border: 1px solid rgb(20, 135, 230);
+   width: fit-content;
+   background-color: rgb(20, 135, 230);
+   padding: 10px;
+   position: absolute;
+   left: 10%;
+   bottom: 45%;
  }
 
 </style>
